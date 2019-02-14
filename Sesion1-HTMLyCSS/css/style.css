@@ -326,7 +326,7 @@ footer{
 .formulario{
   padding: 20px;
   margin: 80px auto;
-  width: 750px;
+  width: 700px;
 }
 
 .formulario h1{
@@ -342,11 +342,28 @@ footer{
   padding-bottom: 10px;
 }
 
+.formulario h3{
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.formulario hr{
+  border: 1px solid #FE8D41;
+}
+
 .campo, textarea{
   background-color: white;
   border-radius: 5px;
-  border: solid 1px #FE8D41;
+  border: solid 2px #FE8D41;
   width: 100%;
+}
+
+textarea{
+  width: 100%;
+  height: 150px;
 }
 
 .campo{
@@ -361,6 +378,7 @@ footer{
   color: white;
   padding: 10px;
   width: 150px;
+  margin-top: 20px;
 }
 
 .submitForm:hover{
@@ -389,12 +407,24 @@ footer{
   display: flex;
   flex-direction: column;
   width: 50%;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
+
+.divFormChoose label{
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 5px;
+}
+
+.divFormChoose label input{
+  margin-left: 30px;
+  transform: scale(1.2);
+}
+
 .divOpciones{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -402,12 +432,28 @@ footer{
   width: 50%;
 }
 
+.opciones2{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.opciones2 label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 select{
   border: solid 1px #FC4D00;
   border-radius: 5px;
   height: 30px;
-  width: 50%;
+  width: 65%;
   margin: 20px;
+}
+
+.labelCom{
+  margin-bottom: 10px;
 }
 
 /* Media Querys */
@@ -499,7 +545,11 @@ select{
 
 }
 
-@media only screen and (max-width: 652px) {
+@media only screen and (max-width: 680px) {
+
+  header{
+    height: 80px;
+  }
 
   .logotipo{
     font-size: 30px;
@@ -556,6 +606,43 @@ select{
   .social{
     margin-top: 5px;
     float: left;
+  }
+
+  .formulario{
+    width: 100%;
+  }
+
+  .divForm{
+    flex-direction: column;
+  }
+
+  .divFormChoose{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .divOpciones{
+    flex-direction: column;
+  }
+
+  .divOpciones select{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .opciones1, .opciones2{
+    width: 100%;
+  }
+
+  .opciones2{
+    flex-direction: column-reverse;
+  }
+
+  .opciones2 label, .opciones1 label{
+    justify-content: flex-start;
+    padding-top: 10px;
   }
 
   }
