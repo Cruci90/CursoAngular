@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Super Web</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/super.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+		<header>
+			<a href="index.html" class="logotipo">Super web</a>
+			<div class="buscar">
+				<input type="text" name="Buscar" placeholder="Buscar" class="inputBuscar">
+				<button type="button" class="lupa"></button>
+			</div>
+			<ul>
+			  <li><a href="#home" class="enlaceNormal">Contacto</a></li>
+			  <li><a href="#" class="enlaceNormal">Formación</a></li>
+			  <li><a href="#" class="enlaceNormal">Opinión</a></li>
+			  <li><a href="contacto.html" class="enlaceLargo">Noticias</a></li>
+			</ul>
+			<a href="#" id ="menu">Menu</a>
+		</header>
+		<main class="contenido">
+			<div class="formulario">
+				<h1>Formulario de contacto</h1>
+				<form>
+					<h2>Datos personales</h2>
+					<div class="divForm">
+						<label for="nombre">Nombre</label><input type="text" name="nombre" class="campo">
+					</div>
+					<div class="divForm">
+						<label for="apellidos">Apellidos</label><input type="text" name="apellidos" class="campo">
+					</div>
+					<div class="divForm">
+						<label for="direccion">Dirección</label><input type="text" name="direccion" class="campo">
+					</div>
+					<div class="divForm" id="divTelefono">
+						<label for="telefono">Teléfono</label><input type="text" name="telefono" class="campo"></div>
+					<div class="divForm" id="divEmail">
+						<label for="email">E-mail</label><input type="text" name="email" class="campo">
+					</div>
+					<hr>
+					<br>
+					<h2>Aficiones</h2>
+					<div class="divFormChoose">
+						<div class="choose1">
+							<label>Grupo de checkboxes</label>
+							<label><input type="checkbox" name="aficiones1" value="Checkbox1">Checkbox1</label>
+							<label><input type="checkbox" name="aficiones1" value="Checkbox2">Checkbox2</label>
+							<label><input type="checkbox" name="aficiones1" value="Checkbox3">Checkbox3</label>
+						</div>
+						<div class="choose2">
+							<label>Grupo de radiobuttons</label>
+							<label><input type="radio" name="aficiones2" value="RadioButton1">RadioButton1</label>
+							<label><input type="radio" name="aficiones2" value="RadioButton2">RadioButton2</label>
+							<label><input type="radio" name="aficiones2" value="RadioButton3">RadioButton3</label>
+						</div>
+					</div>
+					<div class="divOpciones">
+						<div class="opciones1">
+							<label>Opciones</label>
+							<select name="opciones">
+							  <option value="opcion1"></option>
+							  <option value="opcion2">Saab</option>
+							  <option value="opcion3">Fiat</option>
+							  <option value="opcion4">Audi</option>
+							</select>
+						</div>
+						<div class="opciones2">
+							<label>Opciones</label>
+							<select name="opciones">
+							  <option value="opcion1"></option>
+							  <option value="opcion2">Saab</option>
+							  <option value="opcion3">Fiat</option>
+							  <option value="opcion4">Audi</option>
+							</select>
+						</div>
+					</div>
+					<hr>
+					<br>
+					<label>Comentarios</label>
+					<textarea name="comentarios" rows="5" cols="40"></textarea>
+					<input type="submit" name="submit" class="submitForm" value="Enviar">
+				</form>
+			</main>
+		</div>
+		<footer>
+			<div class="footer1">
+				<p>Super Web es una marca registrada por Telehuerto Entertaiment, Murcia</p>
+				<br>
+				<p>Super Web. Calle Falsa 123, 00001, Bitcoinlandia</p>
+				<br>
+				<p>© SuperWeb 2019</p>
+			</div>
+			<div class="footer2">
+				<div class="enlaces">
+					<a href="#">Mapa web</a>
+					<a href="#">Información legal</a>
+					<a href="#">Politica de cookies</a>
+				</div>
+				<div class="social">
+					<div id="facebook"></div>
+					<div id="twitter"></div>
+					<div id="pinterest"></div>
+					<div id="google"></div>
+				</div>
+			</div>
+		</footer>
+</body>
+
+</html>

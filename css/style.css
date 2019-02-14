@@ -1,0 +1,562 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FFBD89;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+
+li a:hover {
+  background-color: #D7935C;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.enlaceNormal{
+  border-left: solid 1px black;
+}
+
+.enlaceLargo{
+  width: 350px;
+  text-align: right;
+}
+
+#menu{
+  display: none;
+}
+
+header{
+  height: 180px;
+  background-color: #FE8D41;
+  position: relative;
+  box-shadow: 3px 15px 11px -9px rgba(0,0,0,0.75);
+}
+
+.logotipo{
+  text-decoration: none;
+  background-image: url(../img/logo.png);
+  display: block;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  height: 270px;
+  width: 400px;
+  margin-left: 100px;
+  position: absolute;
+  z-index: 1;
+}
+
+.buscar{
+  border-radius: 5px;
+  overflow: hidden;
+  position: absolute;
+  width: 170px;
+  right: 0;
+  margin-right: 5%;
+  margin-top: 50px;
+}
+
+.inputBuscar{
+  height: 30px;
+  width: 140px;
+  background-color: #F2F1DA;
+  text-decoration: none;
+  border: none;
+  text-indent: 10px;
+  font-style: italic;
+}
+
+.lupa{
+  background-image: url("../img/lupa.png");
+  background-repeat: no-repeat;
+  text-decoration: none;
+  border: none;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  bottom: 0;
+  background-position: center;
+}
+
+.lupa:hover{
+  background-color: rgba(0.5,0,0.5,0.2);
+  transition: 1s;
+  filter:brightness(0.4);
+  cursor: pointer;
+}
+
+/* Cuerpo */ 
+.contenedor{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.contenido{
+  background-color: #F2F1DA;
+  display: flex;
+  flex-direction: row;
+}
+
+.principal{
+  padding: 10px;
+  margin-top: 20px;
+  width: 66%;
+}
+.principal img{
+  width: 100%;
+}
+
+aside{
+  display: block;
+  float: right;
+  width: 33%;
+  padding: 10px;
+}
+
+article{
+  border: solid 1px #FE8D41;
+  margin-top: 20px;
+  height: 190px;
+  overflow: hidden;
+}
+
+.cabeceraArt{
+  background-color: #FE8D41;
+  width: 30px;
+  padding: 5px;
+  width: 100%;
+  color: white;
+}
+
+.contenidoArt{
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.contenidoArt img{
+  width: 100%;
+  height: 100%;
+  margin: 15px;
+}
+.contenidoArt p{
+  font-size: 10px;
+  display: block;
+  margin-top: 15px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  text-overflow: ellipsis;
+}
+
+hr{
+  border: solid 1px #B3B3B3;
+}
+
+section h1{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+section h2{
+  font-size: 1.1em;
+}
+
+section h3{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+section h4{
+  font-size: 0.7em;
+  color: gray;
+  display: block;
+  margin-bottom: -8px;
+}
+
+section p{
+  font-size: 0.8em;
+}
+
+.noticias{
+  display: flex;
+  flex-direction: row;
+}
+
+.noticia{
+  border: solid 1px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 120px;
+  width: 260px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+#noticia1{
+  background-image: url("../img/putin.jpg");
+  background-size: cover;
+}
+
+#noticia2{
+  background-image: url("../img/alf.jpg");
+  background-size: cover;
+}
+
+#noticia3{
+  background-image: url("../img/kung-fury.jpg");
+  background-size: cover;
+}
+
+.notiCont{
+  color: white;
+  background-color: rgba(43,43,43,0.7);
+  height: 100%;
+  margin-top: 75px;
+  padding: 8px;
+}
+
+.noticia:hover .notiCont{
+  transition: 0.5s;
+  margin-top: 0px;
+  cursor: pointer;
+}
+
+/*Footer*/
+footer{
+  display: flex;
+  flex-direction: row;
+  background-color: #838383;
+  color: #EDEDED;
+  height: 150px;
+  width: 100%;
+}
+
+.footer1{
+  margin: 20px;
+  margin-top: 30px;
+  font-size: 0.8em;
+  width: 50%;
+}
+
+.footer2{
+  margin: 20px;
+  margin-top: 30px;
+  width: 50%;
+  text-align: right;
+}
+
+.enlaces a{
+  color: white;
+  font-size: 0.7em;
+}
+
+.social{
+  margin-top: 15px;
+  display: flex;
+  float: right;
+}
+
+.social div{
+  margin: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+#facebook{
+  background-image: url("../img/facebookGris.png");
+  background-size: cover;
+}
+
+#twitter{
+  background-image: url("../img/twitterGris.png");
+  background-size: cover;
+}
+
+#pinterest{
+  background-image: url("../img/pinterestGris.png");
+  background-size: cover;
+}
+
+#google{
+  background-image: url("../img/googleGris.png");
+  background-size: cover;
+}
+
+#facebook:hover{
+  background-image: url("../img/facebookColor.png");
+  cursor: pointer;
+}
+
+#twitter:hover{
+  background-image: url("../img/twitterColor.png");
+  cursor: pointer;
+}
+
+#pinterest:hover{
+  background-image: url("../img/pinterestColor.png");
+  cursor: pointer;
+}
+
+#google:hover{
+  background-image: url("../img/googleColor.png");
+  cursor: pointer;
+}
+
+/* Formulario de contacto */
+.formulario{
+  padding: 20px;
+  margin: 80px auto;
+  width: 750px;
+}
+
+.formulario h1{
+  font-weight: bold;
+  font-size: 24px;
+  padding: 15px;
+}
+
+.formulario h2{
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.campo, textarea{
+  background-color: white;
+  border-radius: 5px;
+  border: solid 1px #FE8D41;
+  width: 100%;
+}
+
+.campo{
+  height: 30px;
+}
+
+.submitForm{
+  background-color: #FE8D41;
+  display: block;
+  margin: auto;
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 150px;
+}
+
+.submitForm:hover{
+  background-color: #FC4D00;
+  cursor: pointer;
+}
+
+.divForm{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 5px;
+}
+
+.divForm label{
+  display: block;
+  width: 100px;
+}
+
+.divFormChoose{
+  display: flex;
+  flex-direction: row;
+}
+
+.choose1, .choose2{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.divOpciones{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.opciones1, .opciones2{
+  width: 50%;
+}
+
+select{
+  border: solid 1px #FC4D00;
+  border-radius: 5px;
+  height: 30px;
+  width: 50%;
+  margin: 20px;
+}
+
+/* Media Querys */
+@media only screen and (max-width: 1076px) {
+
+  .logotipo{
+    margin-left: 7%;
+  }
+
+  .enlaceLargo{
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+  header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+  }
+
+  .buscar{
+    margin-top: 0px;
+    right: auto;
+    width: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .inputBuscar{
+    width: 100%;
+  }
+
+  header ul{
+    display: none;
+  }
+
+  #menu{
+    display: block;
+    width: 60px;
+    text-decoration: none;
+    columns: black;
+  }
+
+  .logotipo{
+    text-decoration: none;
+    background-image: none;
+    text-indent: 0px;
+    height: 20px;
+    width: 180px;
+    margin-top: -20px;
+    margin-left: 0px;
+    position: relative;
+    color: black;
+    font-size: 35px;
+  }
+
+  .contenido{
+    flex-direction: column;
+  }
+
+  .principal{
+    width: 100%;
+  }
+
+  aside{
+    width: 100%;
+  }
+
+  .contenidoArt img{
+    width: 130px;
+    height: 130px;
+    margin: 15px;
+  }
+
+  .noticias{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .noticia{
+    width: 210px;
+  }
+
+}
+
+@media only screen and (max-width: 652px) {
+
+  .logotipo{
+    font-size: 30px;
+    width: 70%;
+    transform: scale(0.9);
+  }
+
+  .buscar{
+    width: 75%;
+    margin-right: 4px;
+    transform: scale(0.9);
+  }
+
+  #menu{
+    width: 20%;
+    margin-right: 4px;
+    transform: scale(0.9);
+  }
+
+  .principal h1{
+    font-size: 27px;
+  }
+
+  .principal h2{
+    font-size: 0.9em;
+  }
+
+  .noticia{
+    width: 143px;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.85em;
+  }
+
+  footer br{
+    display: none;
+  }
+
+  .footer1{
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .footer2{
+    width: 100%;
+    margin-top: -20px;
+    margin-left: 20px;
+    text-align: left;
+  }
+
+  .social{
+    margin-top: 5px;
+    float: left;
+  }
+
+  }
+
