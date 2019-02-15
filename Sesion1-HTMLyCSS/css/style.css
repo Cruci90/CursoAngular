@@ -46,6 +46,10 @@ li a:hover {
   display: none;
 }
 
+.desplegable{
+  display: none;
+}
+
 header{
   height: 180px;
   background-color: #FE8D41;
@@ -421,6 +425,14 @@ textarea{
   transform: scale(1.2);
 }
 
+.divSeparador{
+  display: flex;
+  flex-direction: row;
+}
+#ema, #tel{
+  margin-right: 12px;
+}
+
 .divOpciones{
   display: flex;
   flex-direction: row;
@@ -499,7 +511,23 @@ select{
     display: block;
     width: 60px;
     text-decoration: none;
-    columns: black;
+    color: black;
+  }
+
+  #menuHover{
+    display: block;
+    width: 40px;
+    text-decoration: none;
+    color: black;
+  }
+
+  #menu ul{
+    margin-bottom: -100px;
+  }
+
+  #menu:hover .desplegable{
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .logotipo{
@@ -569,6 +597,10 @@ select{
     transform: scale(0.9);
   }
 
+   #menu ul{
+    margin-bottom: -145px;
+  }
+
   .principal h1{
     font-size: 27px;
   }
@@ -620,6 +652,9 @@ select{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .divSeparador{
+    flex-direction: column;
   }
 
   .divOpciones{

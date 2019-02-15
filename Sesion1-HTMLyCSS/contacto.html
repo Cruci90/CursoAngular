@@ -24,7 +24,15 @@
 			  <li><a href="#" class="enlaceNormal">Opinión</a></li>
 			  <li><a href="contacto.html" class="enlaceLargo">Noticias</a></li>
 			</ul>
-			<a href="#" id ="menu">Menu</a>
+			<nav id="menu">
+			  <a href="#" id="menuHover">Menú</a>
+			    <ul class="desplegable">
+					  <li><a href="#" class="menuResponsive">Formación</a></li>
+					  <li><a href="#" class="menuResponsive">Opinión</a></li>
+					  <li><a href="#" class="menuResponsive">Noticias</a></li>
+					  <li><a href="contacto.html" class="menuResponsive">Contacto</a></li>
+			    </ul>
+			</nav>
 		</header>
 		<main class="contenido">
 			<div class="formulario">
@@ -40,10 +48,12 @@
 					<div class="divForm">
 						<label for="direccion">Dirección</label><input type="text" name="direccion" class="campo">
 					</div>
-					<div class="divForm" id="divTelefono">
-						<label for="telefono">Teléfono</label><input type="text" name="telefono" class="campo"></div>
-					<div class="divForm" id="divEmail">
-						<label for="email">E-mail</label><input type="text" name="email" class="campo">
+					<div class="divSeparador">
+						<div class="divForm">
+							<label for="telefono" id="tel">Teléfono</label><input type="text" name="telefono" class="campo"></div>
+						<div class="divForm">
+							<label for="email" id="ema">E-mail</label><input type="text" name="email" class="campo">
+						</div>
 					</div>
 					<hr>
 					<br>
